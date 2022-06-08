@@ -15,7 +15,9 @@ jobs:
         with:
           node-version: 16
       - run: npm install
+        working-directory: ./website
       - run: npm build
+        working-directory: ./website
 
       - name: Set up Docker Buildx
         id: buildx

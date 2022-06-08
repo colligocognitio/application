@@ -43,7 +43,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: ./gateway
-          tags: gateway
+          tags: ghcr.io/colligocognitio/application/gateway
           push: ${{ github.ref == 'refs/heads/main' }}
 
       - name: Image digest
